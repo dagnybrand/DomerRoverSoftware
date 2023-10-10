@@ -9,3 +9,11 @@ ON WINDOWS SYSTEM:
 - Download Oracle VM and Ubuntu 22.04 ISO
 - Load VM and download Github on Machine
 - Download VS Code 
+
+
+radio_communication: 
+- holds client/server communication files, most are stored on pi
+- contains pi to arduino and arduino to pi code
+
+
+MAKE BRANCH FOR ANY COMMIT OR PUSH CHANGES
