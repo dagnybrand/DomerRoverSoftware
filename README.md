@@ -11,7 +11,7 @@ ON WINDOWS SYSTEM:
 - Download VS Code 
 
 
-radio_communication: 
+[radio_communication:](https://github.com/mikeyags1016/DomerRoverSoftware/tree/main/radio_communication)
 - holds client/server communication files, most are stored on pi
 - contains pi to arduino and arduino to pi code
 
