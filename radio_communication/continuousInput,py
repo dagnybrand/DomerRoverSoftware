@@ -1,5 +1,4 @@
 # Takes in keyboard inputs as long as the button is pressed - not just when released
-# Sends those inputs to arduino
 
 import keyboard
 from pi_to_arduino import Arduino
