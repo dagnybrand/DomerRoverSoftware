@@ -1,0 +1,17 @@
+# Takes in keyboard inputs as long as the button is pressed - not just when released
+# Sends those inputs to arduino
+
+import keyboard
+from pi_to_arduino import Arduino
+
+arduino = Arduino()
+
+while True:
+    if (keyboard.is_pressed("w")):
+        arduino.send_signal("w")
+    elif (keyboard.is_pressed("a")):
+        arduino.send_signal("a")
+    elif (keyboard.is_pressed("s")):
+        arduino.send_signal("s")
+    elif (keyboard.is_pressed("d")):
+        arduino.send_signal("d")
