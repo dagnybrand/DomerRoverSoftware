@@ -7,10 +7,10 @@ arduino = Arduino()
 
 while True:
     if (keyboard.is_pressed("w")):
-        arduino.send_signal("w")
+        arduino.send_signal(b"w")
     elif (keyboard.is_pressed("a")):
-        arduino.send_signal("a")
+        arduino.send_signal(b"a")
     elif (keyboard.is_pressed("s")):
-        arduino.send_signal("s")
+        arduino.send_signal(b"s")
     elif (keyboard.is_pressed("d")):
-        arduino.send_signal("d")
+        arduino.send_signal(b"d")
