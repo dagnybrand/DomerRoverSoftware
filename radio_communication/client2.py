@@ -1,8 +1,7 @@
 import socket
 from getkey import getkey, keys
 
-#host = "169.254.147.106" # pi
-host = socket.gethostname() # home computer
+host = "192.168.188.2"
 port = 5000
 
 client = socket.socket()
