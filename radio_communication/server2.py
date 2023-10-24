@@ -13,7 +13,7 @@ connection, address = server.accept()
 print("Connection from " + str(address))
 print(host, port)
 
-arduino = Arduino()
+#arduino = Arduino()
 
 while True:
     data = connection.recv(1024).decode()
@@ -21,12 +21,13 @@ while True:
         break
 
     if data == 'w' or data == 'a' or data == 's' or data == 'd':
-        arduino.send_signal(data)
+        pass
+        #arduino.send_signal(data)
 
     print("From connection: " + str(data))
 
-    data = input("Enter server response: ")
-    connection.send(data.encode())
+    #data = input("Enter server response: ")
+    #connection.send(data.encode())
 
 connection.close()
 
