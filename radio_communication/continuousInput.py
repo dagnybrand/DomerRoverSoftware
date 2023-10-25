@@ -1,5 +1,6 @@
 # Takes in keyboard inputs as long as the key is pressed - not just when key is released
 # Sends inputs to arduino in the form of numbers
+# Only works if keyboard is directly connected to raspberry pi. Should only be used to test; not final product
 
 import keyboard
 from pi_to_arduino import Arduino
