@@ -6,9 +6,9 @@ import struct
 
 import cv2
 
-HOST = "10.7.188.188"
+#HOST = "10.7.188.188"
 #HOST = 'localhost'
-PORT = 5000
+#PORT = 5000
 HOST = "169.254.139.218"
 PORT = 50010
 

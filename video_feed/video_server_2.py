@@ -8,8 +8,9 @@ import pickle
 import struct
 
 #HOST = "10.7.188.188"
-HOST = 'localhost'
-PORT = 5000
+#HOST = 'localhost'
+HOST = "169.254.147.106"
+PORT = 50010
 
 cap=cv2.VideoCapture(0)
 
