@@ -45,47 +45,60 @@ void loop() {
       readthis = (char)Serial.read();
   
       if(readthis == 'w'){
-        translated = 0;}
+        translated = 0;
+        Serial.print(readthis);
+        }
       else if(readthis == 'a'){
-        translated = 1;}
+        translated = 1;
+        Serial.print(readthis);
+        }
       else if(readthis == 's'){
-        translated = 2;}
+        translated = 2;
+        Serial.print(readthis);
+        }
       else if(readthis == 'd'){
-        translated = 3;}
+        translated = 3;
+        Serial.print(readthis);
+        }
       else if(readthis == 'x'){
         translated = 4;
       }
 
      switch(translated){
+      // forward
       case 0:
-        LS = 255;
-        RS = 255;
-        MLS = 255;
-        MRS = 255;
+        LS = -255/2;
+        RS = 255/2;
+        MLS = 255/2;
+        MRS = 255/2;
+        Serial.print(0);
         delay(10);
         break;
       
       case 1:
-        LS = -127;
-        RS = 127;
-        MLS = -255;
-        MRS = 255;
+        LS = 127/2;
+        RS = 127/2;
+        MLS = -255/2;
+        MRS = 255/2;
+        Serial.print(0);
         delay(10);
         break;
       
       case 2: 
-        LS = -255;
-        RS = -255;
-        MLS = -255;
-        MRS = -255;
+        LS = 255/2;
+        RS = -255/2;
+        MLS = 255/2;
+        MRS = -255/2;
+        Serial.print(0);
         delay(10);
         break;
             
       case 3:
-        LS = 127;
-        RS = -127;
-        MLS = 255;
-        MRS = -255;
+        LS = -127/2;
+        RS = -127/2;
+        MLS = 255/2;
+        MRS = -255/2;
+        Serial.print(0);
         delay(10);
         break;
         
@@ -94,16 +107,17 @@ void loop() {
         RS = 0;
         MLS = 0;
         MRS = 0;
+        Serial.print(0);
       break;
-//      default:
-//        outer.control(0, 0);
-//        inner.control(0, 0);
-//       break;
+      default:
+        outer.control(0, 0);
+        inner.control(0, 0);
+       break;
+     
+      }   
       outer.control(LS, RS);
       inner.control(MLS, MRS);
-     
-}   
-}
+  }
 }
 //     digitalWrite(directionParLeft, HIGH);
 //     digitalWrite(directionParRight, LOW);
