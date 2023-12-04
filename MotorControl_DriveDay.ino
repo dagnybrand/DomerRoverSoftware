@@ -68,6 +68,14 @@ void loop() {
         translated = 6;
         Serial.print(readthis);
         }
+      else if(readthis == 'z'){
+        translated = 7;
+        Serial.print(readthis);
+        }
+      else if(readthis == 'c'){
+        translated = 8;
+        Serial.print(readthis);
+        }
       else if(readthis == 'x'){
         translated = 4;
       }
@@ -82,7 +90,7 @@ void loop() {
         Serial.print(0);
         delay(10);
         break;
-      
+      //left zero radius
       case 1:
         LS = 127/3;
         RS = 127/3;
@@ -91,7 +99,7 @@ void loop() {
         Serial.print(0);
         delay(10);
         break;
-      
+      //back
       case 2: 
         LS = 255/6;
         RS = -255/6;
@@ -100,7 +108,7 @@ void loop() {
         Serial.print(0);
         delay(10);
         break;
-            
+      //right zero radius
       case 3:
         LS = -127/3;
         RS = -127/3;
@@ -129,6 +137,24 @@ void loop() {
         Serial.print(0);
         delay(10);
         break;
+      //left bigger radius
+      case 7:
+        LS = 127/6;
+        RS = 127/3;
+        MLS = 0;//-255/6;
+        MRS = 0//255/6;
+        Serial.print(0);
+        delay(10);
+      //right bigger radius
+      case 8:
+        LS = -127/3;
+        RS = -127/6;
+        MLS = 0;//255/6;
+        MRS = 0;//-255/6;
+        Serial.print(0);
+        delay(10);
+        break;
+      
         
      case 4:
       LS = 0;
