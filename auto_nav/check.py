@@ -3,7 +3,7 @@ from cv2 import aruco
 import numpy as np
 
 # load in the calibration data
-calib_data_path = "../calib_data/MultiMatrix.npz"
+calib_data_path = "calib_data/MultiMatrix.npz"
 
 calib_data = np.load(calib_data_path)
 print(calib_data.files)
