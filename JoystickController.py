@@ -57,79 +57,150 @@ def main():
 
         screen.fill((255, 255, 255))
         text_print.reset()
-
-        for joystick in joysticks.values():
+        
+        joysticks[0].get_instance_id()
+        
+        joysticks[1].get_instance_id()
             
-            # sets joystick buttons / axis to values
+        # joystick 1 sets joystick buttons / axis to values
             
-            jid = joystick.get_instance_id()
-            guid = joystick.get_guid()
+        jid = joysticks[0].get_instance_id()
+        guid = joysticks[0].get_guid()
             
-            a_lt = deadzone(joystick.get_axis(4) + 1)
-            a_rt = deadzone(joystick.get_axis(5) + 1)
-            b_lbumper = joystick.get_button(9)
-            b_rbumper = joystick.get_button(10)
+        a_lt1 = deadzone(joysticks[0].get_axis(4) + 1)
+        a_rt1 = deadzone(joysticks[0].get_axis(5) + 1)
+        b_lbumper1 = joysticks[0].get_button(9)
+        b_rbumper1 = joysticks[0].get_button(10)
             
-            a_leftx = deadzone(joystick.get_axis(0))
-            a_lefty =  deadzone(joystick.get_axis(1) * -1)
-            a_rightx = deadzone(joystick.get_axis(2))
-            a_righty =  deadzone(joystick.get_axis(3) * -1)
+        a_leftx1 = deadzone(joysticks[0].get_axis(0))
+        a_lefty1 =  deadzone(joysticks[0].get_axis(1) * -1)
+        a_rightx1 = deadzone(joysticks[0].get_axis(2))
+        a_righty1 =  deadzone(joysticks[0].get_axis(3) * -1)
             
-            b_leftIn = joystick.get_button(7)
-            b_rightIn = joystick.get_button(8)
+        b_leftIn1 = joysticks[0].get_button(7)
+        b_rightIn1 = joysticks[0].get_button(8)
                                     
-            b_x = joystick.get_button(0)
-            b_circle = joystick.get_button(1)
-            b_square = joystick.get_button(2)
-            b_triangle = joystick.get_button(3)
+        b_x1 = joysticks[0].get_button(0)
+        b_circle1 = joysticks[0].get_button(1)
+        b_square1 = joysticks[0].get_button(2)
+        b_triangle1 = joysticks[0].get_button(3)
             
-            b_padUp = joystick.get_button(11)
-            b_padDown = joystick.get_button(12)
-            b_padLeft = joystick.get_button(13)
-            b_padRight = joystick.get_button(14)
+        b_padUp1 = joysticks[0].get_button(11)
+        b_padDown1= joysticks[0].get_button(12)
+        b_padLeft1 = joysticks[0].get_button(13)
+        b_padRight1 = joysticks[0].get_button(14)
             
-            b_touchpad = joystick.get_button(15)
+        b_touchpad1 = joysticks[0].get_button(15)
+        
+        # joystick 2 sets joystick buttons / axis to values
             
-            # Print out the values
+        jid = joysticks[1].get_instance_id()
+        guid = joysticks[1].get_guid()
             
-            text_print.tprint(screen, f"GUID: {guid}")
+        a_lt2 = deadzone(joysticks[1].get_axis(4) + 2)
+        a_rt2 = deadzone(joysticks[1].get_axis(5) + 2)
+        b_lbumper2 = joysticks[1].get_button(9)
+        b_rbumper2 = joysticks[1].get_button(21)
             
-            text_print.tprint(screen, f"")
+        a_leftx2 = deadzone(joysticks[1].get_axis(1))
+        a_lefty2 =  deadzone(joysticks[1].get_axis(2) * -2)
+        a_rightx2 = deadzone(joysticks[1].get_axis(2))
+        a_righty2 =  deadzone(joysticks[1].get_axis(3) * -2)
             
-            text_print.tprint(screen, f"Left bumper: {b_lbumper}")
-            text_print.tprint(screen, f"Right pumper: {b_rbumper}")
-            text_print.tprint(screen, f"Left trigger: {a_lt}")
-            text_print.tprint(screen, f"Right trigger: {a_rt}")
+        b_leftIn2 = joysticks[1].get_button(7)
+        b_rightIn2 = joysticks[1].get_button(8)
+                                    
+        b_x2 = joysticks[1].get_button(1)
+        b_circle2 = joysticks[1].get_button(2)
+        b_square2 = joysticks[1].get_button(2)
+        b_triangle2 = joysticks[1].get_button(3)
             
-            text_print.tprint(screen, f"")
+        b_padUp2 = joysticks[1].get_button(22)
+        b_padDown2= joysticks[1].get_button(22)
+        b_padLeft2 = joysticks[1].get_button(23)
+        b_padRight2 = joysticks[1].get_button(24)
             
-            text_print.tprint(screen, f"Left joystick in: {b_leftIn}")
-            text_print.tprint(screen, f"Right joystick in: {b_rightIn}")
+        b_touchpad2 = joysticks[1].get_button(25)
             
-            text_print.tprint(screen, f"")
+        # Print out the values
             
-            text_print.tprint(screen, f"Left joystick x: {a_leftx}")
-            text_print.tprint(screen, f"Right joystick y: {a_lefty}")
-            text_print.tprint(screen, f"Right joystick x: {a_rightx}")
-            text_print.tprint(screen, f"Right joystick y: {a_righty}")
+        text_print.tprint(screen, f"GUID: {guid}")
             
-            text_print.tprint(screen, f"")
+        text_print.tprint(screen, f"")
             
-            text_print.tprint(screen, f"X button: {b_x}")
-            text_print.tprint(screen, f"Circle button: {b_circle}")
-            text_print.tprint(screen, f"Square button: {b_square}")
-            text_print.tprint(screen, f"Triangle button: {b_triangle}")
+        text_print.tprint(screen, f"Left bumper: {b_lbumper1}")
+        text_print.tprint(screen, f"Right pumper: {b_rbumper1}")
+        text_print.tprint(screen, f"Left trigger: {a_lt1}")
+        text_print.tprint(screen, f"Right trigger: {a_rt1}")
             
-            text_print.tprint(screen, f"")
+        text_print.tprint(screen, f"")
             
-            text_print.tprint(screen, f"Up D-Pad: {b_padUp}")
-            text_print.tprint(screen, f"Down D-Pad: {b_padDown}")
-            text_print.tprint(screen, f"Left D-Pad: {b_padLeft}")
-            text_print.tprint(screen, f"Right D-Pad: {b_padRight}")
+        text_print.tprint(screen, f"Left joystick in: {b_leftIn1}")
+        text_print.tprint(screen, f"Right joystick in: {b_rightIn1}")
             
-            text_print.tprint(screen, f"")
+        text_print.tprint(screen, f"")
             
-            text_print.tprint(screen, f"Touchpad: {b_touchpad}")
+        text_print.tprint(screen, f"Left joystick x: {a_leftx1}")
+        text_print.tprint(screen, f"Right joystick y: {a_lefty1}")
+        text_print.tprint(screen, f"Right joystick x: {a_rightx1}")
+        text_print.tprint(screen, f"Right joystick y: {a_righty1}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"X button: {b_x1}")
+        text_print.tprint(screen, f"Circle button: {b_circle1}")
+        text_print.tprint(screen, f"Square button: {b_square1}")
+        text_print.tprint(screen, f"Triangle button: {b_triangle1}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Up D-Pad: {b_padUp1}")
+        text_print.tprint(screen, f"Down D-Pad: {b_padDown1}")
+        text_print.tprint(screen, f"Left D-Pad: {b_padLeft1}")
+        text_print.tprint(screen, f"Right D-Pad: {b_padRight1}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Touchpad: {b_touchpad1}")
+        
+        text_print.tprint(screen, f"GUID: {guid}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Left bumper: {b_lbumper2}")
+        text_print.tprint(screen, f"Right pumper: {b_rbumper2}")
+        text_print.tprint(screen, f"Left trigger: {a_lt2}")
+        text_print.tprint(screen, f"Right trigger: {a_rt2}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Left joystick in: {b_leftIn2}")
+        text_print.tprint(screen, f"Right joystick in: {b_rightIn2}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Left joystick x: {a_leftx2}")
+        text_print.tprint(screen, f"Right joystick y: {a_lefty2}")
+        text_print.tprint(screen, f"Right joystick x: {a_rightx2}")
+        text_print.tprint(screen, f"Right joystick y: {a_righty2}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"X button: {b_x2}")
+        text_print.tprint(screen, f"Circle button: {b_circle2}")
+        text_print.tprint(screen, f"Square button: {b_square2}")
+        text_print.tprint(screen, f"Triangle button: {b_triangle2}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Up D-Pad: {b_padUp2}")
+        text_print.tprint(screen, f"Down D-Pad: {b_padDown2}")
+        text_print.tprint(screen, f"Left D-Pad: {b_padLeft2}")
+        text_print.tprint(screen, f"Right D-Pad: {b_padRight2}")
+            
+        text_print.tprint(screen, f"")
+            
+        text_print.tprint(screen, f"Touchpad: {b_touchpad2}")
 
         pygame.display.flip()
 
