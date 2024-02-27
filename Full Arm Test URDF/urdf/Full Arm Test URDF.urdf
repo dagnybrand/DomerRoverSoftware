@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Full Arm Test URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0341265006183657 0.0462950686935159 0.102443391257354"
+        rpy="0 0 0" />
+      <mass
+        value="0.128722339297277" />
+      <inertia
+        ixx="0.000142238421038904"
+        ixy="2.18911954344771E-07"
+        ixz="7.93639398841833E-21"
+        iyy="0.000152907871823892"
+        iyz="3.3794662701644E-20"
+        izz="0.000111728143440921" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="mid_link">
+    <inertial>
+      <origin
+        xyz="0.273192267045527 -0.00101758506181426 0.048"
+        rpy="0 0 0" />
+      <mass
+        value="1.33988411019615" />
+      <inertia
+        ixx="0.000690966563402024"
+        ixy="-6.43694114374591E-06"
+        ixz="1.35519218508846E-19"
+        iyy="0.0368276656683698"
+        iyz="-1.7551246680344E-20"
+        izz="0.0366655806705105" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/mid_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/mid_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_mid_joint"
+    type="continuous">
+    <origin
+      xyz="0.0348737113007681 -0.0544433912573545 0.0784129726863933"
+      rpy="1.5707963267949 -1.41182272304743 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="mid_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="fore_link">
+    <inertial>
+      <origin
+        xyz="0.24 2.22044604925031E-16 0.024"
+        rpy="0 0 0" />
+      <mass
+        value="1.16938811019615" />
+      <inertia
+        ixx="0.000456252044212199"
+        ixy="-2.82773479111376E-17"
+        ixz="1.31083120312533E-19"
+        iyy="0.0257703524715107"
+        iyz="2.83480040751111E-20"
+        izz="0.0257775594814076" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/fore_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full Arm Test URDF/meshes/fore_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mid_fore_link"
+    type="continuous">
+    <origin
+      xyz="0.538 -0.00100000000000159 0.024"
+      rpy="0 0 -1.5297747116815" />
+    <parent
+      link="mid_link" />
+    <child
+      link="fore_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
