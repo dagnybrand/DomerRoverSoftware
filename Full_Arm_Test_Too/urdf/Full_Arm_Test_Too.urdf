@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Full_Arm_Test_Too">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.034127 0.046295 0.10244"
+        rpy="0 0 0" />
+      <mass
+        value="0.12872" />
+      <inertia
+        ixx="0.00014224"
+        ixy="2.1891E-07"
+        ixz="8.1223E-21"
+        iyy="0.00015291"
+        iyz="3.3174E-20"
+        izz="0.00011173" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.27319 -0.0010176 0.048"
+        rpy="0 0 0" />
+      <mass
+        value="1.3399" />
+      <inertia
+        ixx="0.00069097"
+        ixy="-6.4369E-06"
+        ixz="6.8785E-19"
+        iyy="0.036828"
+        iyz="7.9317E-20"
+        izz="0.036666" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0.034874 -0.054443 0.078413"
+      rpy="1.5708 -1.1502 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.24 -4.4409E-16 0.024"
+        rpy="0 0 0" />
+      <mass
+        value="1.1694" />
+      <inertia
+        ixx="0.00045625"
+        ixy="4.1796E-17"
+        ixz="1.0323E-19"
+        iyy="0.02577"
+        iyz="-1.0029E-20"
+        izz="0.025778" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Full_Arm_Test_Too/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.538 -0.001 0.024"
+      rpy="0 0 -1.4434" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="300"
+      velocity="3" />
+  </joint>
+</robot>
