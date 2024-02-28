@@ -1,4 +1,0 @@
-[0.041s] Invoking command in '/home/michael/DomerRoverSoftware/build/domerrover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/DomerRoverSoftware/build/domerrover -- -j14 -l14
-[0.052s] [0mCMake Error: The source directory "/home/michael/DomerRoverSoftware/domerrover" does not exist.
-[0.052s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.053s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

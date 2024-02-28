@@ -1,0 +1,127 @@
+[0.972s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.972s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=14, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f17fc661c00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f17fc661b70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f17fc661b70>>)
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.021s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.021s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/michael/DomerRoverSoftware/src'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.022s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extension 'ignore_ament_install'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extensions ['colcon_pkg']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extension 'colcon_pkg'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extensions ['colcon_meta']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extension 'colcon_meta'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extensions ['ros']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(testarm) by extension 'ros'
+[1.039s] DEBUG:colcon.colcon_core.package_identification:Package 'testarm' with type 'ros.ament_cmake' and name 'testarm'
+[1.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.131s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.159s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/michael/DomerRoverSoftware/install
+[1.175s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/humble
+[1.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_args' from command line to 'None'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_target' from command line to 'None'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_clean_first' from command line to 'False'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'cmake_force_configure' from command line to 'False'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'ament_cmake_args' from command line to 'None'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.293s] Level 5:colcon.colcon_core.verb:set package 'testarm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.293s] DEBUG:colcon.colcon_core.verb:Building package 'testarm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/michael/DomerRoverSoftware/src/build/testarm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/michael/DomerRoverSoftware/src/install/testarm', 'merge_install': False, 'path': '/home/michael/DomerRoverSoftware/src/testarm', 'symlink_install': False, 'test_result_base': None}
+[1.306s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.322s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/michael/DomerRoverSoftware/src/testarm' with build type 'ament_cmake'
+[1.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/michael/DomerRoverSoftware/src/testarm'
+[1.339s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/michael/DomerRoverSoftware/src/build/testarm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/DomerRoverSoftware/src/testarm -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/src/install/testarm
+[2.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/michael/DomerRoverSoftware/src/build/testarm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/DomerRoverSoftware/src/testarm -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/src/install/testarm
+[2.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/michael/DomerRoverSoftware/src/build/testarm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/DomerRoverSoftware/src/build/testarm -- -j14 -l14
+[2.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/michael/DomerRoverSoftware/src/build/testarm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/DomerRoverSoftware/src/build/testarm -- -j14 -l14
+[2.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/michael/DomerRoverSoftware/src/build/testarm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/DomerRoverSoftware/src/build/testarm
+[2.225s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testarm)
+[2.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/michael/DomerRoverSoftware/src/build/testarm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/DomerRoverSoftware/src/build/testarm
+[2.241s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm' for CMake module files
+[2.241s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm' for CMake config files
+[2.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('testarm', 'cmake_prefix_path')
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.ps1'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.dsv'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.sh'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/bin'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/lib/pkgconfig/testarm.pc'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/lib/python3.10/site-packages'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/bin'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.ps1'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.dsv'
+[2.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.sh'
+[2.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.bash'
+[2.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.zsh'
+[2.276s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/michael/DomerRoverSoftware/src/install/testarm/share/colcon-core/packages/testarm)
+[2.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testarm)
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm' for CMake module files
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm' for CMake config files
+[2.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('testarm', 'cmake_prefix_path')
+[2.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.ps1'
+[2.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.dsv'
+[2.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/hook/cmake_prefix_path.sh'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/bin'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/lib/pkgconfig/testarm.pc'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/lib/python3.10/site-packages'
+[2.356s] Level 1:colcon.colcon_core.environment:checking '/home/michael/DomerRoverSoftware/src/install/testarm/bin'
+[2.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.ps1'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.dsv'
+[2.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.sh'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.bash'
+[2.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/michael/DomerRoverSoftware/src/install/testarm/share/testarm/package.zsh'
+[2.373s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/michael/DomerRoverSoftware/src/install/testarm/share/colcon-core/packages/testarm)
+[2.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.374s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.396s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.396s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.396s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.412s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.436s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/michael/DomerRoverSoftware/src/install/local_setup.ps1'
+[2.437s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/michael/DomerRoverSoftware/src/install/_local_setup_util_ps1.py'
+[2.438s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/michael/DomerRoverSoftware/src/install/setup.ps1'
+[2.456s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/michael/DomerRoverSoftware/src/install/local_setup.sh'
+[2.456s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/michael/DomerRoverSoftware/src/install/_local_setup_util_sh.py'
+[2.457s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/michael/DomerRoverSoftware/src/install/setup.sh'
+[2.471s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/michael/DomerRoverSoftware/src/install/local_setup.bash'
+[2.472s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/michael/DomerRoverSoftware/src/install/setup.bash'
+[2.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/michael/DomerRoverSoftware/src/install/local_setup.zsh'
+[2.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/michael/DomerRoverSoftware/src/install/setup.zsh'
