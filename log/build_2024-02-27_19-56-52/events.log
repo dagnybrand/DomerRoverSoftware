@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.002909] (Full) JobQueued: {'identifier': 'Full', 'dependencies': OrderedDict()}
+[0.002944] (Full) JobStarted: {'identifier': 'Full'}
+[0.043787] (Full) JobProgress: {'identifier': 'Full', 'progress': 'cmake'}
+[0.044377] (Full) Command: {'cmd': ['/usr/bin/cmake', '/home/michael/DomerRoverSoftware/Full Arm Test URDF', '-DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/Full'], 'cwd': '/home/michael/DomerRoverSoftware/build/Full', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'michael'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/michael'), ('OLDPWD', '/home/michael'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1584'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/michael/DomerRoverSoftware/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'michael'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'michael'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/michael/ws/src/two_wheeled_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/michael-VirtualBox:@/tmp/.ICE-unix/1565,unix/michael-VirtualBox:/tmp/.ICE-unix/1565'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5833b2ba_332d_45b5_9356_2873d66101e0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.22AGJ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.331'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/michael/DomerRoverSoftware/build/Full'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.050024] (Full) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.050115] (Full) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.050164] (Full) StderrLine: {'line': b'  CMake.\n'}
+[0.050194] (Full) StderrLine: {'line': b'\n'}
+[0.050237] (Full) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.050344] (Full) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.050386] (Full) StderrLine: {'line': b'\n'}
+[0.050411] (Full) StderrLine: {'line': b'\x1b[0m\n'}
+[0.050437] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDetermineArmCompiler.cmake\x1b[0m\n'}
+[0.050462] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.050488] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.050512] (Full) StderrLine: {'line': b'CMAKE_Arm_COMPILER_ENV_VAR\x1b[0m\n'}
+[0.050537] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.050562] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.050586] (Full) StderrLine: {'line': b'CMAKE_Arm_COMPILER\x1b[0m\n'}
+[0.050610] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeArmCompiler.cmake\x1b[0m\n'}
+[0.050636] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDetermineTestCompiler.cmake\x1b[0m\n'}
+[0.050662] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.050686] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.050710] (Full) StderrLine: {'line': b'CMAKE_Test_COMPILER_ENV_VAR\x1b[0m\n'}
+[0.050734] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.050758] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.050782] (Full) StderrLine: {'line': b'CMAKE_Test_COMPILER\x1b[0m\n'}
+[0.050818] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeTestCompiler.cmake\x1b[0m\n'}
+[0.050948] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeDetermineURDFCompiler.cmake\x1b[0m\n'}
+[0.050978] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.051003] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.051027] (Full) StderrLine: {'line': b'CMAKE_URDF_COMPILER_ENV_VAR\x1b[0m\n'}
+[0.051053] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.\n'}
+[0.051079] (Full) StderrLine: {'line': b'Missing variable is:\n'}
+[0.051102] (Full) StderrLine: {'line': b'CMAKE_URDF_COMPILER\x1b[0m\n'}
+[0.051126] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeURDFCompiler.cmake\x1b[0m\n'}
+[0.051152] (Full) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:3 (project):\n'}
+[0.051175] (Full) StderrLine: {'line': b'  No CMAKE_Arm_COMPILER could be found.\n'}
+[0.051200] (Full) StderrLine: {'line': b'\n'}
+[0.051224] (Full) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[0.051253] (Full) StderrLine: {'line': b'  CMAKE_Arm_COMPILER to the full path to the compiler, or to the compiler\n'}
+[0.051278] (Full) StderrLine: {'line': b'  name if it is in the PATH.\n'}
+[0.051301] (Full) StderrLine: {'line': b'\n'}
+[0.051326] (Full) StderrLine: {'line': b'\x1b[0m\n'}
+[0.051349] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeArmInformation.cmake\x1b[0m\n'}
+[0.051373] (Full) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:3 (project):\n'}
+[0.051396] (Full) StderrLine: {'line': b'  No CMAKE_Test_COMPILER could be found.\n'}
+[0.051419] (Full) StderrLine: {'line': b'\n'}
+[0.051443] (Full) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[0.051466] (Full) StderrLine: {'line': b'  CMAKE_Test_COMPILER to the full path to the compiler, or to the compiler\n'}
+[0.051490] (Full) StderrLine: {'line': b'  name if it is in the PATH.\n'}
+[0.051513] (Full) StderrLine: {'line': b'\n'}
+[0.051536] (Full) StderrLine: {'line': b'\x1b[0m\n'}
+[0.051560] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeTestInformation.cmake\x1b[0m\n'}
+[0.051585] (Full) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:3 (project):\n'}
+[0.051628] (Full) StderrLine: {'line': b'  No CMAKE_URDF_COMPILER could be found.\n'}
+[0.051666] (Full) StderrLine: {'line': b'\n'}
+[0.051703] (Full) StderrLine: {'line': b'  Tell CMake where to find the compiler by setting the CMake cache entry\n'}
+[0.051740] (Full) StderrLine: {'line': b'  CMAKE_URDF_COMPILER to the full path to the compiler, or to the compiler\n'}
+[0.051777] (Full) StderrLine: {'line': b'  name if it is in the PATH.\n'}
+[0.051814] (Full) StderrLine: {'line': b'\n'}
+[0.051850] (Full) StderrLine: {'line': b'\x1b[0m\n'}
+[0.051940] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: Could not find cmake module file: CMakeURDFInformation.cmake\x1b[0m\n'}
+[0.051984] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_Arm_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[0.052062] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_Test_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[0.052102] (Full) StderrLine: {'line': b'\x1b[0mCMake Error: CMAKE_URDF_COMPILER not set, after EnableLanguage\x1b[0m\n'}
+[0.052140] (Full) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.052317] (Full) StdoutLine: {'line': b'See also "/home/michael/DomerRoverSoftware/build/Full/CMakeFiles/CMakeOutput.log".\n'}
+[0.052893] (Full) CommandEnded: {'returncode': 1}
+[0.053069] (Full) JobEnded: {'identifier': 'Full', 'rc': 1}
+[0.063455] (-) EventReactorShutdown: {}
