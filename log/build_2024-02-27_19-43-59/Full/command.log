@@ -1,2 +1,0 @@
-Invoking command in '/home/michael/DomerRoverSoftware/build/Full': /usr/bin/cmake /home/michael/DomerRoverSoftware/Full Arm Test URDF -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/Full
-Invoked command in '/home/michael/DomerRoverSoftware/build/Full' returned '1': /usr/bin/cmake /home/michael/DomerRoverSoftware/Full Arm Test URDF -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/Full

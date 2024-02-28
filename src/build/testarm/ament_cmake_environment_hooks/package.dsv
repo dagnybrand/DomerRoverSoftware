@@ -1,0 +1,4 @@
+source;share/testarm/local_setup.bash
+source;share/testarm/local_setup.dsv
+source;share/testarm/local_setup.sh
+source;share/testarm/local_setup.zsh

@@ -1,6 +1,0 @@
-Invoking command in '/home/michael/DomerRoverSoftware/build/domerrover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/DomerRoverSoftware/domerrover -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/domerrover
-Invoked command in '/home/michael/DomerRoverSoftware/build/domerrover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/michael/DomerRoverSoftware/domerrover -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/domerrover
-Invoking command in '/home/michael/DomerRoverSoftware/build/domerrover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/DomerRoverSoftware/build/domerrover -- -j14 -l14
-Invoked command in '/home/michael/DomerRoverSoftware/build/domerrover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/michael/DomerRoverSoftware/build/domerrover -- -j14 -l14
-Invoking command in '/home/michael/DomerRoverSoftware/build/domerrover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/DomerRoverSoftware/build/domerrover
-Invoked command in '/home/michael/DomerRoverSoftware/build/domerrover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/michael/DomerRoverSoftware/build/domerrover
