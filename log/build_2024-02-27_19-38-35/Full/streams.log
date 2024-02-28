@@ -1,0 +1,66 @@
+[0.077s] Invoking command in '/home/michael/DomerRoverSoftware/build/Full': /usr/bin/cmake /home/michael/DomerRoverSoftware/Full Arm Test URDF -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/Full
+[0.084s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.084s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.084s]   CMake.
+[0.084s] 
+[0.084s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.084s]   CMake that the project does not need compatibility with older versions.
+[0.084s] 
+[0.084s] [0m
+[0.084s] [0mCMake Error: Could not find cmake module file: CMakeDetermineArmCompiler.cmake[0m
+[0.084s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.084s] Missing variable is:
+[0.084s] CMAKE_Arm_COMPILER_ENV_VAR[0m
+[0.084s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.084s] Missing variable is:
+[0.084s] CMAKE_Arm_COMPILER[0m
+[0.085s] [0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeArmCompiler.cmake[0m
+[0.085s] [0mCMake Error: Could not find cmake module file: CMakeDetermineTestCompiler.cmake[0m
+[0.085s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.085s] Missing variable is:
+[0.085s] CMAKE_Test_COMPILER_ENV_VAR[0m
+[0.085s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.085s] Missing variable is:
+[0.085s] CMAKE_Test_COMPILER[0m
+[0.085s] [0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeTestCompiler.cmake[0m
+[0.085s] [0mCMake Error: Could not find cmake module file: CMakeDetermineURDFCompiler.cmake[0m
+[0.085s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.085s] Missing variable is:
+[0.085s] CMAKE_URDF_COMPILER_ENV_VAR[0m
+[0.085s] [0mCMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+[0.085s] Missing variable is:
+[0.085s] CMAKE_URDF_COMPILER[0m
+[0.085s] [0mCMake Error: Could not find cmake module file: /home/michael/DomerRoverSoftware/build/Full/CMakeFiles/3.22.1/CMakeURDFCompiler.cmake[0m
+[0.086s] -- Configuring incomplete, errors occurred!
+[0.086s] See also "/home/michael/DomerRoverSoftware/build/Full/CMakeFiles/CMakeOutput.log".
+[0.086s] [31mCMake Error at CMakeLists.txt:3 (project):
+[0.086s]   No CMAKE_Arm_COMPILER could be found.
+[0.086s] 
+[0.086s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.086s]   CMAKE_Arm_COMPILER to the full path to the compiler, or to the compiler
+[0.086s]   name if it is in the PATH.
+[0.086s] 
+[0.086s] [0m
+[0.086s] [0mCMake Error: Could not find cmake module file: CMakeArmInformation.cmake[0m
+[0.086s] [31mCMake Error at CMakeLists.txt:3 (project):
+[0.086s]   No CMAKE_Test_COMPILER could be found.
+[0.086s] 
+[0.087s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.087s]   CMAKE_Test_COMPILER to the full path to the compiler, or to the compiler
+[0.087s]   name if it is in the PATH.
+[0.087s] 
+[0.087s] [0m
+[0.087s] [0mCMake Error: Could not find cmake module file: CMakeTestInformation.cmake[0m
+[0.087s] [31mCMake Error at CMakeLists.txt:3 (project):
+[0.087s]   No CMAKE_URDF_COMPILER could be found.
+[0.087s] 
+[0.087s]   Tell CMake where to find the compiler by setting the CMake cache entry
+[0.087s]   CMAKE_URDF_COMPILER to the full path to the compiler, or to the compiler
+[0.087s]   name if it is in the PATH.
+[0.087s] 
+[0.087s] [0m
+[0.087s] [0mCMake Error: Could not find cmake module file: CMakeURDFInformation.cmake[0m
+[0.087s] [0mCMake Error: CMAKE_Arm_COMPILER not set, after EnableLanguage[0m
+[0.087s] [0mCMake Error: CMAKE_Test_COMPILER not set, after EnableLanguage[0m
+[0.087s] [0mCMake Error: CMAKE_URDF_COMPILER not set, after EnableLanguage[0m
+[0.088s] Invoked command in '/home/michael/DomerRoverSoftware/build/Full' returned '1': /usr/bin/cmake /home/michael/DomerRoverSoftware/Full Arm Test URDF -DCMAKE_INSTALL_PREFIX=/home/michael/DomerRoverSoftware/install/Full
