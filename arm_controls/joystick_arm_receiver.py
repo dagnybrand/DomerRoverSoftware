@@ -2,8 +2,9 @@
 import socket
 import pickle
 
-host = "10.7.7.136"
-port = 5000
+# host = "10.7.7.136"
+host = "localhost"
+port = 5002
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((host, port))
@@ -36,5 +37,6 @@ while True:
     b_padDown1 =    joystick_data[15]  
     b_padLeft1 =    joystick_data[16] 
     b_padRight1 =   joystick_data[17]
+
 
 conn.close()

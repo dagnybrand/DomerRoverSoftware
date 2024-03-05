@@ -3,8 +3,9 @@ import socket
 import pickle
 
 #host = "169.254.139.218"
-host = "10.7.7.136"
-port = 5000
+# host = "10.7.7.136"
+host = "localhost"
+port = 5002
 
 client = socket.socket()
 client.connect((host, port))
@@ -46,9 +47,9 @@ def deadzone(button):
         return 0
     else:
         return round(button, c_roundAxis)
-
-def main():
     
+
+def init():  
     # initialization
     screen = pygame.display.set_mode((500, 700))
     pygame.display.set_caption("Joystick example")
@@ -58,7 +59,10 @@ def main():
     
     j = pygame.joystick.Joystick(0)
     joysticks = {}
+    return joysticks, text_print, screen
 
+
+def run(joysticks, text_print, screen):
     done = False
     while not done:
         for event in pygame.event.get():
@@ -159,7 +163,11 @@ def main():
 
     client.close()
 
+def main():
+    joysticks, textprint, screen = init()
+    run(joysticks, textprint, screen)
+    pygame.quit()
+
 
 if __name__ == "__main__":
     main()
-    pygame.quit()
