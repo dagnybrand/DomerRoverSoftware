@@ -32,7 +32,7 @@ while True:
             if all(pixel_center > lower_orange) and all(pixel_center < upper_orange):
                 orange_ct += 1
     
-    if orange_ct > 100:
+    if orange_ct > 70:
         cv.putText(frame, 'ORANGE DETECTED', (50, 50), color=(255, 255, 255), fontFace= cv.FONT_HERSHEY_SIMPLEX, fontScale=1 )
         
     
