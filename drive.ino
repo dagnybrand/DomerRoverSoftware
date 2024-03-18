@@ -19,6 +19,13 @@ int RS = 0;
 int MLS = 0;
 int MRS = 0;
 
+float myJoysticks[2];
+byte* ddata = reinterpret_cast<byte*>(&myJoysticks); // pointer for transferData()
+pcDataLen = sizeof(myJoysticks);
+
+float forward = 0;
+float turn = 0;
+
 
 // bind wheels parallel
 Cytron_SmartDriveDuo outer(PWM_INDEPENDENT, directionParLeft, directionParRight, signalParLeft, signalParRight);
@@ -44,14 +51,29 @@ void setup() {
 
 void loop() {
     // put your main code here, to run repeatedly:
-    if(Serial.available()) {
-      readthis = (char)Serial.read();
+    checkForNewData();
 
     // gets values from two axis from the controller. idk how they are doing that so i will do that so i'm just including this comment
     // make sure to multiple the forward axis by 0.6 and the turn axis by .3 so that it never goes above 255
+
+    if (newData == true) {
+        forward = myJoysticks[0]
+        turn = myJoysticks[1]
+        newData = false;
+    }
     
     set motors(controllerMotorConverter(forward), controllerMotorConverter(turn));
     }
+}
+
+void checkForNewData () {
+    if (Serial.available >= pcDataLen and newData = false) {
+        byte inByte;
+        for (byte n = 0; n < pcDataLen; n++) {
+            inByte = Serial.read();
+            *(ddata + n) = inByte;
+        }
+        newData = true;
 }
 
 void controllerMotorConverter(controller){
