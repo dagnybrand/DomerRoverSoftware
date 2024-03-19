@@ -21,7 +21,7 @@ int MRS = 0;
 
 float myJoysticks[2];
 byte* ddata = reinterpret_cast<byte*>(&myJoysticks); // pointer for transferData()
-pcDataLen = sizeof(myJoysticks);
+int pcDataLen = sizeof(myJoysticks);
 
 float forward = 0;
 float turn = 0;
@@ -62,7 +62,7 @@ void loop() {
         newData = false;
     }
     
-    set motors(controllerMotorConverter(forward), controllerMotorConverter(turn));
+    setMotors(controllerMotorConverter(forward), controllerMotorConverter(turn));
     }
 }
 
