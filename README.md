@@ -1,5 +1,11 @@
-# DomerRoverSoftware
-Domer Rover Software Team 2023-2024 Github Repo
+# Notre Dame's Domer Rover Official GitHub
+Domer Rover is Notre Dame's Official Mars Rover Competition Team which competes in the University Rover Challenge
+
+This repository is home to code developed by the Domer Rover Software Team, led by Dagny Brand (dbrand@nd.edu) and Michael Asgam (magsam2@nd.edu)
+
+Check out the full Domer Rover team on [LinkedIn](https://www.linkedin.com/company/domer-rover/mycompany/)!
+
+## DomerRoverSoftware
 
 *** SETUP ***
 
