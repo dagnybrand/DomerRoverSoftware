@@ -11,7 +11,8 @@ import struct
 
 #HOST = "10.7.188.188"
 #HOST = 'localhost'
-HOST = "10.7.7.136"
+#HOST = "10.7.7.136"
+HOST = "169.254.139.218"
 PORT = 50010
 
 cap=cv2.VideoCapture(0)

@@ -5,10 +5,15 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 
 #using pins 15 and 16, GPIO 22 and 23
-actuator1 = 22
-actuator2 = 23
+#actuator1 = 22
+#actuator2 = 23
+#dir1 = 24
+#dir2 = 27
+actuator1 = 23
+actuator2 = 22
 dir1 = 24
 dir2 = 27
+
 
 GPIO.setmode(GPIO.BCM) #means we are using the GPIO numbers not pin numbers
 GPIO.setup(actuator1, GPIO.OUT)
@@ -65,11 +70,17 @@ from gpiozero import Servo
 import pigpio
 
 #use GPIO25
+# also use GPIO17
 servo = 25
+servo2 = 17
 sval = 1500
+s2val = 1500;
 spwm = pigpio.pi()
 spwm.set_mode(servo, pigpio.OUTPUT)
 spwm.set_PWM_frequency(servo, 50)
+s2pwm = pigpio.pi()
+s2pwm.set_mode(servo2, pigpio.OUTPUT)
+s2pwm.set_PWM_frequency(servo2, 50)
 
 while True:
     data= conn.recv(4096)
@@ -102,21 +113,25 @@ while True:
     #now coding arm controls
     #actuator 1 with y axis left joystick
     a1speed = a_lefty1 * 100
-    if a1speed >= 0:
+    if a1speed >= 1:
         GPIO.output(dir1, GPIO.LOW)
         a1.ChangeDutyCycle(a1speed)
+        #print("l pos")
     else:
         GPIO.output(dir1, GPIO.HIGH)
         a1.ChangeDutyCycle(-a1speed)
+        #print("l neg")
 
     #actuator 2 with y axis right joystick
     a2speed = a_righty1 * 100
     if a2speed >= 0:
         GPIO.output(dir2, GPIO.LOW)
         a2.ChangeDutyCycle(a2speed)
+        #print("r pos")
     else:
         GPIO.output(dir2, GPIO.HIGH)
         a2.ChangeDutyCycle(-a2speed)
+        #print("r neg")
 
     #control rotation with x axis of right joystick
     #can mulitply up to 127, but its really quick
@@ -140,6 +155,17 @@ while True:
             spwm.set_servo_pulsewidth(servo,sval)
         else:
             print("maximum servo value")
+
+    #control servo 2 with left and right triggers
+    if a_lt1 > 0:
+        if s2val >= 515:
+            s2val = s2val - 3*a_lt1
+            s2pwm.set_servo_pulsewidth(servo2,s2val)
+    if a_rt1 > 0:
+        if s2val <= 2485:
+            s2val = s2val + 4*a_rt1
+            s2pwm.set_servo_pulsewidth(servo2, s2val)
+
 
     #print("actuator positions")
     #print(chan1.value, chan1.voltage)
