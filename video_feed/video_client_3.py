@@ -12,7 +12,7 @@ import cv2
 #PORT = 5000
 HOST = "169.254.139.218"
 #HOST = "10.7.7.136"
-PORT = 50010
+PORT = 50011
 
 clientsocket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 clientsocket.connect((HOST,PORT))
